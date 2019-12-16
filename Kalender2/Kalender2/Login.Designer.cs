@@ -1,6 +1,6 @@
 ﻿namespace Kalender2
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -77,7 +77,7 @@
             this.New_user.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.New_user.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,7 +86,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Email);
             this.Controls.Add(this.Login_button);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
