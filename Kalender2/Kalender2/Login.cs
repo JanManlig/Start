@@ -46,12 +46,12 @@ namespace Kalender2
             {
                 if (Email.Text == "")
                 {
-                    Email.Text = "E-Mail";
+                    Email.Text = "E_Mail";
                 }
             }
             if (Email.Focused)
             {
-                if (Email.Text == "E-Mail")
+                if (Email.Text == "E_Mail")
                 {
                     Email.Text = "";
                 }

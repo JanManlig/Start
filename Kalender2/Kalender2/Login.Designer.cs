@@ -87,7 +87,7 @@
             this.Controls.Add(this.Email);
             this.Controls.Add(this.Login_button);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
