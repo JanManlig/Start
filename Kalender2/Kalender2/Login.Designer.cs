@@ -76,6 +76,7 @@
             this.New_user.Text = "Make account";
             this.New_user.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.New_user.UseVisualStyleBackColor = true;
+            this.New_user.Click += new System.EventHandler(this.New_user_Click);
             // 
             // Login
             // 
