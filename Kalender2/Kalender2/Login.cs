@@ -66,7 +66,10 @@ namespace Kalender2
         private void New_user_Click(object sender, EventArgs e)
         {
             make_account m = new make_account();
-            m.Show();
+            this.Hide();
+            m.ShowDialog();
+            this.Close();
+
         }
     }
 }
