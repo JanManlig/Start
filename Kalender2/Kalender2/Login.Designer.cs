@@ -51,7 +51,7 @@
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(229, 20);
             this.Email.TabIndex = 1;
-            this.Email.Text = "E-Mail";
+            this.Email.Text = "E_Mail";
             this.Email.Enter += new System.EventHandler(this.E_Mail_focus);
             this.Email.Leave += new System.EventHandler(this.E_Mail_focus);
             // 

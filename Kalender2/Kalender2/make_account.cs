@@ -15,26 +15,29 @@ namespace Kalender2
     {
         public make_account()
         {
-            string strConnect = @"Provider= Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\schule\source\repos\JanManlig\Start\Kalender2\datenbank\Programmieren.accdb; Persist Security Info=False;";
-            using (OleDbConnection con = new OleDbConnection(strConnect))
-            {
-                con.Open();
-                using (OleDbCommand cmd = new OleDbCommand("SELECT * FROM Nutzer", con))
-                {
-                    OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    table_Nutzer.DataSource = dt;
-                }
-            }
-
-
             InitializeComponent();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void make_account_Load(object sender, EventArgs e)
+        {
+            // TODO: Diese Codezeile lädt Daten in die Tabelle "programmieren123DataSet.Nutzer". Sie können sie bei Bedarf verschieben oder entfernen.
+            this.nutzerTableAdapter.Fill(this.programmieren123DataSet.Nutzer);
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
