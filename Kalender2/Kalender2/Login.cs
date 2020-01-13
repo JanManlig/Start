@@ -71,5 +71,20 @@ namespace Kalender2
             this.Close();
 
         }
+
+        private void Email_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Passwd_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

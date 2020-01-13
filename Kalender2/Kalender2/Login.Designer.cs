@@ -32,13 +32,16 @@
             this.Email = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
             this.New_user = new System.Windows.Forms.Button();
+            this.Email_text = new System.Windows.Forms.Label();
+            this.Passwd_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Login_button
             // 
-            this.Login_button.Location = new System.Drawing.Point(350, 219);
+            this.Login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_button.Location = new System.Drawing.Point(73, 82);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(75, 23);
+            this.Login_button.Size = new System.Drawing.Size(84, 88);
             this.Login_button.TabIndex = 0;
             this.Login_button.Text = "Login";
             this.Login_button.UseVisualStyleBackColor = true;
@@ -47,18 +50,19 @@
             // Email
             // 
             this.Email.AcceptsReturn = true;
-            this.Email.Location = new System.Drawing.Point(275, 167);
+            this.Email.Location = new System.Drawing.Point(5, 20);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(229, 20);
             this.Email.TabIndex = 1;
             this.Email.Text = "E_Mail";
+            this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             this.Email.Enter += new System.EventHandler(this.E_Mail_focus);
             this.Email.Leave += new System.EventHandler(this.E_Mail_focus);
             // 
             // Password
             // 
             this.Password.AcceptsReturn = true;
-            this.Password.Location = new System.Drawing.Point(275, 193);
+            this.Password.Location = new System.Drawing.Point(5, 56);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(228, 20);
             this.Password.TabIndex = 2;
@@ -69,20 +73,42 @@
             // 
             // New_user
             // 
-            this.New_user.Location = new System.Drawing.Point(672, 413);
+            this.New_user.Location = new System.Drawing.Point(73, 176);
             this.New_user.Name = "New_user";
-            this.New_user.Size = new System.Drawing.Size(120, 30);
+            this.New_user.Size = new System.Drawing.Size(84, 30);
             this.New_user.TabIndex = 3;
             this.New_user.Text = "Make account";
             this.New_user.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.New_user.UseVisualStyleBackColor = true;
             this.New_user.Click += new System.EventHandler(this.New_user_Click);
             // 
+            // Email_text
+            // 
+            this.Email_text.AutoSize = true;
+            this.Email_text.Location = new System.Drawing.Point(2, 4);
+            this.Email_text.Name = "Email_text";
+            this.Email_text.Size = new System.Drawing.Size(39, 13);
+            this.Email_text.TabIndex = 4;
+            this.Email_text.Text = "E-Mail:";
+            this.Email_text.Click += new System.EventHandler(this.Email_text_Click);
+            // 
+            // Passwd_label
+            // 
+            this.Passwd_label.AutoSize = true;
+            this.Passwd_label.Location = new System.Drawing.Point(2, 43);
+            this.Passwd_label.Name = "Passwd_label";
+            this.Passwd_label.Size = new System.Drawing.Size(56, 13);
+            this.Passwd_label.TabIndex = 5;
+            this.Passwd_label.Text = "Password:";
+            this.Passwd_label.Click += new System.EventHandler(this.Passwd_label_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(234, 212);
+            this.Controls.Add(this.Passwd_label);
+            this.Controls.Add(this.Email_text);
             this.Controls.Add(this.New_user);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Email);
@@ -100,6 +126,8 @@
         private System.Windows.Forms.TextBox Email;
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Button New_user;
+        private System.Windows.Forms.Label Email_text;
+        private System.Windows.Forms.Label Passwd_label;
     }
 }
 
